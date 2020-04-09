@@ -5,6 +5,8 @@ import Layout from '../components/Layout';
 // import { Link } from 'gatsby';
 import Sidebar from '../components/Sidebar';
 import config from '../../config';
+import roomster from '../assets/images/roomster.png';
+
 const IndexPage = () => (
   <Layout>
     <Sidebar />
@@ -45,8 +47,42 @@ const IndexPage = () => (
 
       <section
         className="resume-section p-3 p-lg-5 d-flex justify-content-center"
+        id="projects"
+      >
+        <div className="w-100">
+          <h2 className="mb-5">Projects</h2>
+          
+          <div class="row">
+          <div class="col-sm-4" >
+          <div class="card" >
+          <img class="card-img-top" src= "https://dummyimage.com/600x400/000/fff"alt="Card image cap"></img>
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+        </div>
+        <div class="col-sm-4" >
+          <div class="card" >
+          <img class="card-img-top" src={roomster} alt="Card image cap"></img>
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+        </div>
+
+        </div>
+
+        </div>
+        
+      </section>
+       
+      <hr className="m-0" />
+
+       <section
+        className="resume-section p-3 p-lg-5 d-flex justify-content-center"
         id="experience"
       >
+         
         <div className="w-100">
           <h2 className="mb-5">Experience</h2>
 
@@ -119,9 +155,10 @@ const IndexPage = () => (
           </div>
         </div>
       </section>
+       
+      <hr className="m-0" /> 
 
-      <hr className="m-0" />
-
+       
       <section
         className="resume-section p-3 p-lg-5 d-flex align-items-center"
         id="education"

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Scrollspy from 'react-scrollspy';
 import Scroll from './Scroll';
 
-import avatar from '../assets/images/avatar.png';
+import avatar from '../assets/images/adiprofile.jpeg';
 import config from '../../config';
 
 export class Sidebar extends Component {
@@ -11,6 +11,7 @@ export class Sidebar extends Component {
     this.state = {
       tabs: [
         { content: 'About', href: 'about' },
+        { content: 'Projects', href: 'projects' },
         { content: 'Experience', href: 'experience' },
         { content: 'Education', href: 'education' },
         { content: 'Skills', href: 'skills' },
