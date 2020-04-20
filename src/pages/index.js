@@ -1,16 +1,23 @@
-import React from 'react';
+import React from 'react'
+import { graphql } from 'gatsby'
+import get from 'lodash/get'
+import Hemlet from 'react-helmet'
 
-import Layout from '../components/Layout';
-
-// import { Link } from 'gatsby';
+import Layout from '../components/Layout'
 import Sidebar from '../components/Sidebar';
+import CardList from '../components/CardList';
 import config from '../../config';
-import roomster from '../assets/images/roomster.png';
 
-const IndexPage = () => (
-  <Layout>
-    <Sidebar />
-    <div className="container-fluid p-0">
+
+class SiteIndex extends React.Component {
+  render() {
+    
+   
+
+    return (
+      <Layout>
+         <Sidebar />
+         <div className="container-fluid p-0">
       <section
         className="resume-section p-3 p-lg-5 d-flex align-items-center"
         id="about"
@@ -46,33 +53,17 @@ const IndexPage = () => (
       <hr className="m-0" />
 
       <section
-        className="resume-section p-3 p-lg-5 d-flex justify-content-center"
+        className="resume-section curve p-3 p-lg-5 d-flex justify-content-center"
         id="projects"
       >
-        <div className="w-100">
-          <h2 className="mb-5">Projects</h2>
-          
-          <div class="row">
-          <div class="col-sm-4" >
-          <div class="card" >
-          <img class="card-img-top" src= "https://dummyimage.com/600x400/000/fff"alt="Card image cap"></img>
-          <div class="card-body">
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          </div>
-        </div>
-        </div>
-        <div class="col-sm-4" >
-          <div class="card" >
-          <img class="card-img-top" src={roomster} alt="Card image cap"></img>
-          <div class="card-body">
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          </div>
-        </div>
-        </div>
+      <CardList/> 
 
-        </div>
+        
+        
+        
+       
 
-        </div>
+        
         
       </section>
        
@@ -331,7 +322,12 @@ const IndexPage = () => (
         </div>
       </section>
     </div>
-  </Layout>
-);
+        
+      </Layout>
+    )
+  }
+}
 
-export default IndexPage;
+export default SiteIndex
+
+

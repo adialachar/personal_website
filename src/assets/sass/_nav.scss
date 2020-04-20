@@ -3,6 +3,7 @@
     font-weight: 800;
     letter-spacing: 0.05rem;
     text-transform: uppercase;
+    
   }
   .navbar-toggler {
     &:focus {
@@ -23,6 +24,8 @@
 
     width: $sidebar-base-width;
     height: 100vh;
+  
+
     .navbar-brand {
       display: flex;
 
