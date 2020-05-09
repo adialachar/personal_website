@@ -32,20 +32,29 @@ class SiteIndex extends React.Component {
             <a href={`mailto:${config.email}`}>{config.email}</a>
           </div>
           <p className="lead mb-5">
-            I am experienced in leveraging agile frameworks to provide a robust
-            synopsis for high level overviews. Iterative approaches to corporate
-            strategy foster collaborative thinking to further the overall value
-            proposition.
+            I am an undergraduate CS student at the University of California Riverside graduating in June of 2020. 
+            Outside of school, I enjoy making side projects and competing in hackathons with my friends.
+            <br></br>
+            <br></br>
+            Most of my projects focus on web development (Flask/Django/React)
+            but I'm always looking to learn new frameworks and languages.
           </p>
           <div className="social-icons">
-            {config.socialLinks.map(social => {
+            {/* {config.socialLinks.map(social => {
               const { icon, url } = social;
               return (
                 <a key={url} href={url}>
                   <i className={`fab ${icon}`}></i>
                 </a>
               );
-            })}
+            })} */}
+            <a key="https://github.com/adialachar" href ="https://github.com/adialachar">
+              <i className={`fab fa-github`}></i>
+            </a>
+            <a key="https://linkedin.com/in/aacha002/" href ="https://linkedin.com/in/aacha002/">
+              <i className={`fab fa-linkedin-in`}></i>
+            </a>
+
           </div>
         </div>
       </section>
@@ -56,6 +65,7 @@ class SiteIndex extends React.Component {
         className="resume-section curve p-3 p-lg-5 d-flex justify-content-center"
         id="projects"
       >
+        
       <CardList/> 
 
         
@@ -79,40 +89,44 @@ class SiteIndex extends React.Component {
 
           <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
             <div className="resume-content">
-              <h3 className="mb-0">Senior Web Developer</h3>
-              <div className="subheading mb-3">Intelitec Solutions</div>
+              <h3 className="mb-0">Software Engineering Intern</h3>
+              <div className="subheading mb-3">NASA JPL</div>
               <p>
-                Bring to the table win-win survival strategies to ensure
-                proactive domination. At the end of the day, going forward, a
-                new normal that has evolved from generation X is on the runway
-                heading towards a streamlined cloud solution. User generated
-                content in real-time will have multiple touchpoints for
-                offshoring.
+              I developed features for JPL HR metrics application with Angular, Flask, and PostgreSQL used by entirety of JPL. 
+              I Created and modeled Angular components to fit Sketch mockup and make API calls to Flask endpoints
+              and built scripts in Python to automate population of Postgres database
               </p>
             </div>
             <div className="resume-date text-md-right">
-              <span className="text-primary">March 2013 - Present</span>
+              <span className="text-primary">June 2019 - August 2019</span>
             </div>
           </div>
 
           <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
             <div className="resume-content">
-              <h3 className="mb-0">Web Developer</h3>
-              <div className="subheading mb-3">Intelitec Solutions</div>
+              <h3 className="mb-0">Web Dev Lead</h3>
+              <div className="subheading mb-3">Citrus Hack</div>
               <p>
-                Capitalize on low hanging fruit to identify a ballpark value
-                added activity to beta test. Override the digital divide with
-                additional clickthroughs from DevOps. Nanotechnology immersion
-                along the information highway will close the loop on focusing
-                solely on the bottom line.
+                Citrus Hack is UCR's premier hackathon. I was the web dev co-lead creating both cutiehack.io and citrushack.com for the 2019-20 hackathon season. I created mockups in Figma, implemented those mockups in React, and installed a Django RF backend with GraphQL in the backend for Cutie Hack. This application was used by 500+ people.
+              <br></br>
+              <br></br>
+            For Citrus Hack, we primarily used React for the stack of the website. 
               </p>
             </div>
             <div className="resume-date text-md-right">
-              <span className="text-primary">December 2011 - March 2013</span>
+              <span className="text-primary">May 2019 - April 2020</span>
             </div>
           </div>
+          <div className="DLResume" style={{backgroundColor: "#6F42C1", width: '20%', height: '10%', borderRadius: '100px', marginLeft: '45%'}}>
+          <a key="https://drive.google.com/file/d/1dqatR1CI5Jeqb6pUvsowVBtmMpfnABr2/view?usp=sharing" 
+            href ="https://drive.google.com/file/d/1dqatR1CI5Jeqb6pUvsowVBtmMpfnABr2/view?usp=sharing"
+            style={{textAlign: 'center', fontFamily: 'Muli', color: 'white', width: '15%' }}
+            >
+              <i className={`fas fa-file-download`} style={{fontFamily: 'Muli', paddingTop: '15%', paddingLeft:'12%'}}>   Download Resume</i>
+            </a>
+            </div>
 
-          <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          {/* <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
             <div className="resume-content">
               <h3 className="mb-0">Junior Web Designer</h3>
               <div className="subheading mb-3">Shout! Media Productions</div>
@@ -127,9 +141,9 @@ class SiteIndex extends React.Component {
             <div className="resume-date text-md-right">
               <span className="text-primary">July 2010 - December 2011</span>
             </div>
-          </div>
+          </div> */}
 
-          <div className="resume-item d-flex flex-column flex-md-row justify-content-between">
+          {/* <div className="resume-item d-flex flex-column flex-md-row justify-content-between">
             <div className="resume-content">
               <h3 className="mb-0">Web Design Intern</h3>
               <div className="subheading mb-3">Shout! Media Productions</div>
@@ -143,14 +157,14 @@ class SiteIndex extends React.Component {
             <div className="resume-date text-md-right">
               <span className="text-primary">September 2008 - June 2010</span>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
        
       <hr className="m-0" /> 
 
        
-      <section
+      {/* <section
         className="resume-section p-3 p-lg-5 d-flex align-items-center"
         id="education"
       >
@@ -159,17 +173,17 @@ class SiteIndex extends React.Component {
 
           <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
             <div className="resume-content">
-              <h3 className="mb-0">University of Colorado Boulder</h3>
+              <h3 className="mb-0">University of California Riverside</h3>
               <div className="subheading mb-3">Bachelor of Science</div>
-              <div>Computer Science - Web Development Track</div>
-              <p>GPA: 3.23</p>
+              <div>Computer Science</div>
+              <p>Undergraduate Coursework: </p>
             </div>
             <div className="resume-date text-md-right">
-              <span className="text-primary">August 2006 - May 2010</span>
+              <span className="text-primary">Fall 2016 - June 2020</span>
             </div>
-          </div>
+          </div> */}
 
-          <div className="resume-item d-flex flex-column flex-md-row justify-content-between">
+          {/* <div className="resume-item d-flex flex-column flex-md-row justify-content-between">
             <div className="resume-content">
               <h3 className="mb-0">James Buchanan High School</h3>
               <div className="subheading mb-3">Technology Magnet Program</div>
@@ -178,9 +192,9 @@ class SiteIndex extends React.Component {
             <div className="resume-date text-md-right">
               <span className="text-primary">August 2002 - May 2006</span>
             </div>
-          </div>
-        </div>
-      </section>
+          </div> */}
+        {/* </div>
+      </section> */}
 
       <hr className="m-0" />
 
@@ -196,10 +210,7 @@ class SiteIndex extends React.Component {
           </div>
           <ul className="list-inline dev-icons">
             <li className="list-inline-item">
-              <i className="fab fa-html5"></i>
-            </li>
-            <li className="list-inline-item">
-              <i className="fab fa-css3-alt"></i>
+              <i className="fab fa-python"></i>
             </li>
             <li className="list-inline-item">
               <i className="fab fa-js-square"></i>
@@ -213,28 +224,12 @@ class SiteIndex extends React.Component {
             <li className="list-inline-item">
               <i className="fab fa-node-js"></i>
             </li>
-            <li className="list-inline-item">
-              <i className="fab fa-sass"></i>
-            </li>
-            <li className="list-inline-item">
-              <i className="fab fa-less"></i>
-            </li>
-            <li className="list-inline-item">
-              <i className="fab fa-wordpress"></i>
-            </li>
-            <li className="list-inline-item">
-              <i className="fab fa-gulp"></i>
-            </li>
-            <li className="list-inline-item">
-              <i className="fab fa-grunt"></i>
-            </li>
-            <li className="list-inline-item">
-              <i className="fab fa-npm"></i>
-            </li>
+            
+
           </ul>
 
-          <div className="subheading mb-3">Workflow</div>
-          <ul className="fa-ul mb-0">
+          {/* <div className="subheading mb-3">Workflow</div> */}
+          {/* <ul className="fa-ul mb-0">
             <li>
               <i className="fa-li fa fa-check"></i>
               Mobile-First, Responsive Design
@@ -251,13 +246,13 @@ class SiteIndex extends React.Component {
               <i className="fa-li fa fa-check"></i>
               Agile Development &amp; Scrum
             </li>
-          </ul>
+          </ul> */}
         </div>
       </section>
 
-      <hr className="m-0" />
+      {/* <hr className="m-0" /> */}
 
-      <section
+      {/* <section
         className="resume-section p-3 p-lg-5 d-flex align-items-center"
         id="interests"
       >
@@ -276,7 +271,7 @@ class SiteIndex extends React.Component {
             advancements in the front-end web development world.
           </p>
         </div>
-      </section>
+      </section> */}
 
       <hr className="m-0" />
 
@@ -289,23 +284,21 @@ class SiteIndex extends React.Component {
           <ul className="fa-ul mb-0">
             <li>
               <i className="fa-li fa fa-trophy text-warning"></i>
-              Google Analytics Certified Developer
+              3<sup>rd</sup> Place - LA Hacks 2020 - CheaterBeater
             </li>
             <li>
               <i className="fa-li fa fa-trophy text-warning"></i>
-              Mobile Web Specialist - Google Certification
+             1<sup>st</sup> Place - GEICO Hacktivates Hackathon 2019 - Baut
             </li>
             <li>
-              <i className="fa-li fa fa-trophy text-warning"></i>1<sup>st</sup>
-              Place - University of Colorado Boulder - Emerging Tech Competition
-              2009
+              <i className="fa-li fa fa-trophy text-warning"></i>
+                Top 30 - Pennapps XX - Toor              
             </li>
             <li>
-              <i className="fa-li fa fa-trophy text-warning"></i>1<sup>st</sup>
-              Place - University of Colorado Boulder - Adobe Creative Jam 2008
-              (UI Design Category)
+              <i className="fa-li fa fa-trophy text-warning"></i>
+              Best UI/UX and Best use of Twilio - Citrus Hack 2019 - Joyride
             </li>
-            <li>
+            {/* <li>
               <i className="fa-li fa fa-trophy text-warning"></i>2<sup>nd</sup>
               Place - University of Colorado Boulder - Emerging Tech Competition
               2008
@@ -317,7 +310,7 @@ class SiteIndex extends React.Component {
             <li>
               <i className="fa-li fa fa-trophy text-warning"></i>3<sup>rd</sup>
               Place - James Buchanan High School - Hackathon 2005
-            </li>
+            </li> */}
           </ul>
         </div>
       </section>

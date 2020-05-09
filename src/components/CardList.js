@@ -8,7 +8,10 @@ class CardList extends React.Component {
     render() {
 
         return (
+          <div>
+            <h2 className="mb-5">Projects</h2>
           <div className="row">
+           
             {projectsData.map(p => (
               <div className="col-md-4 p-3">
                 <div className="card">
@@ -28,6 +31,7 @@ class CardList extends React.Component {
                 </div>
               </div>
             ))}
+          </div>
           </div>
         );
     }

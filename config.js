@@ -15,25 +15,26 @@ module.exports = {
     {
       icon: 'fa-github',
       name: 'Github',
-      url: 'https://github.com/anubhavsrivastava',
+      url: 'https://github.com/adialachar',
     },
     {
       icon: 'fa-linkedin-in',
       name: 'Linkedin',
-      url: 'https://linkedin.com/in/theanubhav/',
+      url: 'https://linkedin.com/in/aacha002/',
     },
+
     {
-      icon: 'fa-twitter',
-      name: 'Twitter',
-      url: 'https://twitter.com/onlyanubhav',
+      icon: 'Resume',
+      name: 'Resume',
+      url: 'https://drive.google.com/file/d/1dqatR1CI5Jeqb6pUvsowVBtmMpfnABr2/view?usp=sharing',
     },
-    {
-      icon: 'fa-facebook-f',
-      name: 'Facebook',
-      url: 'https://facebook.com/theanubhav',
-    },
+    // {
+    //   icon: 'fa-facebook-f',
+    //   name: 'Facebook',
+    //   url: 'https://facebook.com/theanubhav',
+    // },
   ],
-  email: 'aditya.acharya98@gmail.com',
-  phone: '510-474-2736',
-  address: '232,Scotia Court, Fremont, CA',
+  email: 'aacha002@ucr.edu',
+  phone: '510-474-2763',
+  // address: '232 Scotia Court, Fremont, CA',
 };
