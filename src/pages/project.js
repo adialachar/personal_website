@@ -32,7 +32,7 @@ export class project extends Component {
 
     <div class="col-md-4">
       <h3 class="my-3">Project Description</h3>
-      <p>   {description}</p>
+      <p>   {description} <br></br> <br></br>hi</p>
       <h3 class="my-3">Project Details</h3>
       <ul>
         <li>Lorem Ipsum</li>
