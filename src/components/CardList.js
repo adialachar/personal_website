@@ -13,15 +13,15 @@ class CardList extends React.Component {
           <div className="row">
            
             {projectsData.map(p => (
-              <div className="col-md-4 p-3">
+              <div className="col-md-4 p-3 d-flex">
                 <div className="card">
                   <img
-                    className="card-img-top"
+                    className="card-img-top flex-fill"
                     src={p.image}
                     alt="Card image cap"
                     href="/project"
                   ></img>
-                  <div className="card-body">
+                  <div className="card-body flex-fill">
                     <h5 class="card-title">{p.title}</h5>
                     <p className="card-text">{p.description} </p>
                     <Link className="stretched-link" to={'/project'} state={p}/>

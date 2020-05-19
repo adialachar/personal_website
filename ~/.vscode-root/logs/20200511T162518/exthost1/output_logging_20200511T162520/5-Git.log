@@ -1,0 +1,25 @@
+Looking for git in: /usr/bin/git
+Using git 2.20.1 (Apple Git-117) from /usr/bin/git
+> git rev-parse --show-toplevel
+> git rev-parse --git-dir
+Open repository: /Users/shanthi.acharya/Documents/Gatsby/gatsby-portfolio-dev-1
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: no upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git show :src/pages/index.js
+> git ls-files --stage -- /Users/shanthi.acharya/Documents/Gatsby/gatsby-portfolio-dev-1/src/pages/index.js
+> git cat-file -s 87ecc142f5a9877f5fe81137ec47f4c2db8e4439
+> git check-ignore -v -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: no upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template

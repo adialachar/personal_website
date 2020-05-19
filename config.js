@@ -21,13 +21,13 @@ module.exports = {
       icon: 'fa-linkedin-in',
       name: 'Linkedin',
       url: 'https://linkedin.com/in/aacha002/',
-    },
+    }
 
-    {
-      icon: 'Resume',
-      name: 'Resume',
-      url: 'https://drive.google.com/file/d/1dqatR1CI5Jeqb6pUvsowVBtmMpfnABr2/view?usp=sharing',
-    },
+    // {
+    //   icon: 'Resume',
+    //   name: 'Resume',
+    //   url: 'https://drive.google.com/file/d/1dqatR1CI5Jeqb6pUvsowVBtmMpfnABr2/view?usp=sharing',
+    // },
     // {
     //   icon: 'fa-facebook-f',
     //   name: 'Facebook',

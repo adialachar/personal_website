@@ -1,0 +1,33 @@
+["INFO" - 4:09:55 PM] Extension Name: esbenp.prettier-vscode.
+["INFO" - 4:09:55 PM] Extension Version: 4.6.0.
+["INFO" - 4:09:55 PM] Loaded module 'prettier@1.19.1' from '/Users/shanthi.acharya/Documents/Gatsby/gatsby-portfolio-dev-1/node_modules/prettier/index.js'
+["INFO" - 4:09:55 PM] Enabling prettier for languages
+[
+  "css",
+  "graphql",
+  "html",
+  "javascript",
+  "javascriptreact",
+  "json",
+  "json5",
+  "jsonc",
+  "less",
+  "markdown",
+  "mdx",
+  "mongo",
+  "postcss",
+  "scss",
+  "typescript",
+  "typescriptreact",
+  "vue",
+  "yaml"
+]
+["INFO" - 4:09:55 PM] Enabling prettier for range supported languages
+[
+  "graphql",
+  "javascript",
+  "javascriptreact",
+  "json",
+  "typescript",
+  "typescriptreact"
+]

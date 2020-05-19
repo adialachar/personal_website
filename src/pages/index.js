@@ -7,6 +7,7 @@ import Layout from '../components/Layout'
 import Sidebar from '../components/Sidebar';
 import CardList from '../components/CardList';
 import config from '../../config';
+import dev from '../assets/images/dev.svg'
 
 
 class SiteIndex extends React.Component {
@@ -17,44 +18,40 @@ class SiteIndex extends React.Component {
     return (
       <Layout>
          <Sidebar />
-         <div className="container-fluid p-0">
-      <section
+         <div className="container-fluid p-0 ">
+         <section
         className="resume-section p-3 p-lg-5 d-flex align-items-center"
         id="about"
       >
         <div className="w-100">
-          <h1 className="mb-0">
-            {config.firstName}
-            <span className="text-primary">{config.lastName}</span>
+        
+          <h1 className="mb-0 ">
+          👋🏼 Hi, I am 
+            <span className="text-primary"> {config.firstName} {config.lastName}</span>
+            
           </h1>
-          <div className="subheading mb-5">
+          <h2 className="mt-2 mb-5 text-secondary"> I'm a Full Stack Web Developer!</h2>
+          {/* <div className="subheading mb-5">
             {config.address} · {config.phone} ·
             <a href={`mailto:${config.email}`}>{config.email}</a>
-          </div>
-          <p className="lead mb-5">
-            I am an undergraduate CS student at the University of California Riverside graduating in June of 2020. 
-            Outside of school, I enjoy making side projects and competing in hackathons with my friends.
-            <br></br>
-            <br></br>
-            Most of my projects focus on web development (Flask/Django/React)
-            but I'm always looking to learn new frameworks and languages.
-          </p>
+          </div> */}
+           <p className="lead mb-5">
+                    I am an undergraduate CS student at the University of California Riverside graduating in June of 2020. 
+                    Outside of school, I enjoy making side projects and competing in hackathons with my friends.
+                    <br></br>
+                    <br></br>
+                    Most of my projects focus on web development (Flask/Django/React)
+                    but I'm always looking to learn new frameworks and languages.
+                 </p>
           <div className="social-icons">
-            {/* {config.socialLinks.map(social => {
+            {config.socialLinks.map(social => {
               const { icon, url } = social;
               return (
                 <a key={url} href={url}>
                   <i className={`fab ${icon}`}></i>
                 </a>
               );
-            })} */}
-            <a key="https://github.com/adialachar" href ="https://github.com/adialachar">
-              <i className={`fab fa-github`}></i>
-            </a>
-            <a key="https://linkedin.com/in/aacha002/" href ="https://linkedin.com/in/aacha002/">
-              <i className={`fab fa-linkedin-in`}></i>
-            </a>
-
+            })}
           </div>
         </div>
       </section>
@@ -62,7 +59,7 @@ class SiteIndex extends React.Component {
       <hr className="m-0" />
 
       <section
-        className="resume-section curve p-3 p-lg-5 d-flex justify-content-center"
+        className="resume-section p-3 p-lg-5 d-flex justify-content-center"
         id="projects"
       >
         
@@ -117,12 +114,11 @@ class SiteIndex extends React.Component {
               <span className="text-primary">May 2019 - April 2020</span>
             </div>
           </div>
-          <div className="DLResume" style={{backgroundColor: "#6F42C1", width: '20%', height: '10%', borderRadius: '100px', marginLeft: '45%'}}>
+          <div >
           <a key="https://drive.google.com/file/d/1dqatR1CI5Jeqb6pUvsowVBtmMpfnABr2/view?usp=sharing" 
             href ="https://drive.google.com/file/d/1dqatR1CI5Jeqb6pUvsowVBtmMpfnABr2/view?usp=sharing"
-            style={{textAlign: 'center', fontFamily: 'Muli', color: 'white', width: '15%' }}
-            >
-              <i className={`fas fa-file-download`} style={{fontFamily: 'Muli', paddingTop: '15%', paddingLeft:'12%'}}>   Download Resume</i>
+            className="btn btn-primary "><i className ="fas fa-download pr-1"></i>
+               Download Resume
             </a>
             </div>
 
@@ -130,13 +126,13 @@ class SiteIndex extends React.Component {
             <div className="resume-content">
               <h3 className="mb-0">Junior Web Designer</h3>
               <div className="subheading mb-3">Shout! Media Productions</div>
-              <p>
+              <h5>
                 Podcasting operational change management inside of workflows to
                 establish a framework. Taking seamless key performance
                 indicators offline to maximise the long tail. Keeping your eye
                 on the ball while performing a deep dive on the start-up
                 mentality to derive convergence on cross-platform integration.
-              </p>
+              </h5>
             </div>
             <div className="resume-date text-md-right">
               <span className="text-primary">July 2010 - December 2011</span>
@@ -147,12 +143,12 @@ class SiteIndex extends React.Component {
             <div className="resume-content">
               <h3 className="mb-0">Web Design Intern</h3>
               <div className="subheading mb-3">Shout! Media Productions</div>
-              <p>
+              <h5>
                 Collaboratively administrate empowered markets via plug-and-play
                 networks. Dynamically procrastinate B2C users after installed
                 base benefits. Dramatically visualize customer directed
                 convergence without revolutionary ROI.
-              </p>
+              </h5>
             </div>
             <div className="resume-date text-md-right">
               <span className="text-primary">September 2008 - June 2010</span>
@@ -176,7 +172,7 @@ class SiteIndex extends React.Component {
               <h3 className="mb-0">University of California Riverside</h3>
               <div className="subheading mb-3">Bachelor of Science</div>
               <div>Computer Science</div>
-              <p>Undergraduate Coursework: </p>
+              <h5>Undergraduate Coursework: </h5>
             </div>
             <div className="resume-date text-md-right">
               <span className="text-primary">Fall 2016 - June 2020</span>
@@ -187,7 +183,7 @@ class SiteIndex extends React.Component {
             <div className="resume-content">
               <h3 className="mb-0">James Buchanan High School</h3>
               <div className="subheading mb-3">Technology Magnet Program</div>
-              <p>GPA: 3.56</p>
+              <h5>GPA: 3.56</h5>
             </div>
             <div className="resume-date text-md-right">
               <span className="text-primary">August 2002 - May 2006</span>
@@ -208,21 +204,36 @@ class SiteIndex extends React.Component {
           <div className="subheading mb-3">
             Programming Languages &amp; Tools
           </div>
+         
           <ul className="list-inline dev-icons">
-            <li className="list-inline-item">
+            <li className="list-inline-item  mr-5 text-center">
               <i className="fab fa-python"></i>
+               <h5>Python </h5> 
+            
             </li>
-            <li className="list-inline-item">
+            <li className="list-inline-item mr-5 text-center">
               <i className="fab fa-js-square"></i>
+              <h5> Javascript</h5>
             </li>
-            <li className="list-inline-item">
+            <li className="list-inline-item mr-5 text-center">
               <i className="fab fa-angular"></i>
+              <h5> Angular</h5>
             </li>
-            <li className="list-inline-item">
+            <li className="list-inline-item mr-5 text-center">
               <i className="fab fa-react"></i>
+              <h5> React</h5>
             </li>
-            <li className="list-inline-item">
+            <li className="list-inline-item text-center">
               <i className="fab fa-node-js"></i>
+              <h5> Node</h5>
+            </li>
+            <li className="list-inline-item text-center">
+              <i className="fab fa-django"></i>
+              <h5> Django</h5>
+            </li>
+            <li className="list-inline-item text-center">
+              <i className="fab fa-django"></i>
+              <h5> Flask</h5>
             </li>
             
 
@@ -258,18 +269,18 @@ class SiteIndex extends React.Component {
       >
         <div className="w-100">
           <h2 className="mb-5">Interests</h2>
-          <p>
+          <h5>
             Apart from being a web developer, I enjoy most of my time being
             outdoors. In the winter, I am an avid skier and novice ice climber.
             During the warmer months here in Colorado, I enjoy mountain biking,
             free climbing, and kayaking.
-          </p>
+          </h5>
           <p className="mb-0">
             When forced indoors, I follow a number of sci-fi and fantasy genre
             movies and television shows, I am an aspiring chef, and I spend a
             large amount of my free time exploring the latest technology
             advancements in the front-end web development world.
-          </p>
+          </h5>
         </div>
       </section> */}
 
@@ -284,11 +295,11 @@ class SiteIndex extends React.Component {
           <ul className="fa-ul mb-0">
             <li>
               <i className="fa-li fa fa-trophy text-warning"></i>
-              3<sup>rd</sup> Place - LA Hacks 2020 - CheaterBeater
+              3<suh5>rd</suh5> Place - LA Hacks 2020 - CheaterBeater
             </li>
             <li>
               <i className="fa-li fa fa-trophy text-warning"></i>
-             1<sup>st</sup> Place - GEICO Hacktivates Hackathon 2019 - Baut
+             1<suh5>st</suh5> Place - GEICO Hacktivates Hackathon 2019 - Baut
             </li>
             <li>
               <i className="fa-li fa fa-trophy text-warning"></i>
@@ -299,22 +310,28 @@ class SiteIndex extends React.Component {
               Best UI/UX and Best use of Twilio - Citrus Hack 2019 - Joyride
             </li>
             {/* <li>
-              <i className="fa-li fa fa-trophy text-warning"></i>2<sup>nd</sup>
+              <i className="fa-li fa fa-trophy text-warning"></i>2<suh5>nd</suh5>
               Place - University of Colorado Boulder - Emerging Tech Competition
               2008
             </li>
             <li>
-              <i className="fa-li fa fa-trophy text-warning"></i>1<sup>st</sup>
+              <i className="fa-li fa fa-trophy text-warning"></i>1<suh5>st</suh5>
               Place - James Buchanan High School - Hackathon 2006
             </li>
             <li>
-              <i className="fa-li fa fa-trophy text-warning"></i>3<sup>rd</sup>
+              <i className="fa-li fa fa-trophy text-warning"></i>3<suh5>rd</suh5>
               Place - James Buchanan High School - Hackathon 2005
             </li> */}
           </ul>
         </div>
       </section>
     </div>
+    <hr className="m-10" />
+    <footer>
+
+     <div class="col-md-6">
+       <div class="copyright text-sm font-weight-bold text-center text-md-left">© 2020 <a href="" class="font-weight-bold" target="_blank">Aditya Acharya</a>. All rights reserved</div></div>
+    </footer>
         
       </Layout>
     )
