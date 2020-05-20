@@ -12,7 +12,7 @@ export class project extends Component {
         image: 'https://via.placeholder.com/350',
         website: 'https://via.placeholder.com',
       }
-      const { title, description, image, website } = passedData
+      const { title, description, image, website, extended, videodemo, newsarticle } = passedData
 
     return (
        
@@ -38,14 +38,14 @@ export class project extends Component {
 
             <div class="col-md-4">
               <h3 class="my-3">Project Description</h3>
-              <p>   {description} <br></br> <br></br>hi</p>
-              <h3 class="my-3">Project Details</h3>
-              <ul>
-                <li>Lorem Ipsum</li>
-                <li>Dolor Sit Amet</li>
-                <li>Consectetur</li>
-                <li>Adipiscing Elit</li>
-              </ul>
+              <p>   {description} <br></br></p> <p> <div dangerouslySetInnerHTML={{__html: videodemo}} /> </p> <p><div dangerouslySetInnerHTML={{__html: newsarticle}} /></p> <p>{extended}</p>
+              {/* <h3 class="my-3">Stack</h3> */}
+              {/* <ul>
+                <li>{backend}</li>
+                <li>{frontend}</li>
+                <li>{misc1}</li>
+                <li>{misc2}</li>
+              </ul> */}
             </div>
 
           </div>
