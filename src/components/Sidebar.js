@@ -8,6 +8,7 @@ import config from '../../config';
 export class Sidebar extends Component {
   constructor(props) {
     super(props);
+    this.toggleNavbar = this.toggleNavbar.bind(this);
     this.state = {
       tabs: [
         { content: 'About', href: 'about' },
@@ -18,7 +19,13 @@ export class Sidebar extends Component {
         // { content: 'Interests', href: 'interests' },
         { content: 'Awards', href: 'awards' },
       ],
+      collapsed:true,
     };
+  }
+  toggleNavbar() {
+    this.setState({
+      collapsed: !this.state.collapsed,
+    });
   }
 
   render() {
@@ -28,6 +35,9 @@ export class Sidebar extends Component {
         className="navbar navbar-expand-lg navbar-dark bg-primary fixed-top"
         id="sideNav"
       >
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
         <a className="navbar-brand" href="#page-top">
           <span className="d-block d-lg-none">
             {config.firstName} {config.lastName}
@@ -48,6 +58,7 @@ export class Sidebar extends Component {
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
+          onClick={() => this.toggleNavbar()}
         >
           <span className="navbar-toggler-icon"></span>
         </button>

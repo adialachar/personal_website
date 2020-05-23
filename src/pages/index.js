@@ -9,6 +9,8 @@ import CardList from '../components/CardList';
 import config from '../../config';
 import dev from '../assets/images/dev.svg'
 
+import Flask from './../assets/images/flask-icon.svg'
+import Django from './../assets/images/django-logo-negative.svg'
 
 class SiteIndex extends React.Component {
   render() {
@@ -202,7 +204,7 @@ class SiteIndex extends React.Component {
           <h2 className="mb-5">Skills</h2>
 
           <div className="subheading mb-3">
-            Programming Languages &amp; Tools
+            Programming Languages
           </div>
          
           <ul className="list-inline dev-icons">
@@ -215,25 +217,30 @@ class SiteIndex extends React.Component {
               <i className="fab fa-js-square"></i>
               <h5> Javascript</h5>
             </li>
+            <br/> <br/>
+            <div className="subheading mb-3">
+            Tools
+          </div>
             <li className="list-inline-item mr-5 text-center">
               <i className="fab fa-angular"></i>
               <h5> Angular</h5>
             </li>
-            <li className="list-inline-item mr-5 text-center">
+            <li className="list-inline-item  mr-5 text-center">
               <i className="fab fa-react"></i>
               <h5> React</h5>
             </li>
-            <li className="list-inline-item text-center">
+            <li className="list-inline-item mr-5 text-center">
               <i className="fab fa-node-js"></i>
               <h5> Node</h5>
             </li>
-            <li className="list-inline-item text-center">
-              <i className="fab fa-django"></i>
-              <h5> Django</h5>
-            </li>
-            <li className="list-inline-item text-center">
-              <i className="fab fa-django"></i>
+
+            <li className="list-inline-item mr-5  text-center">
+            <img src={Flask}  width="50px" height="50px"/>
               <h5> Flask</h5>
+            </li>
+            <li className="list-inline-item mr-5 text-center">
+            <img  src={Django} width="50px" height="50px" />
+              <h5> Django</h5>
             </li>
             
 
@@ -293,19 +300,19 @@ class SiteIndex extends React.Component {
         <div className="w-100">
           <h2 className="mb-5">Awards &amp; Certifications</h2>
           <ul className="fa-ul mb-0">
-            <li>
+            <li style={{fontSize:"25px"}}> 
               <i className="fa-li fa fa-trophy text-warning"></i>
               3<suh5>rd</suh5> Place - LA Hacks 2020 - CheaterBeater
             </li>
-            <li>
+            <li style={{fontSize:"25px"}}>
               <i className="fa-li fa fa-trophy text-warning"></i>
              1<suh5>st</suh5> Place - GEICO Hacktivates Hackathon 2019 - Baut
             </li>
-            <li>
+            <li style={{fontSize:"25px"}}>
               <i className="fa-li fa fa-trophy text-warning"></i>
                 Top 30 - Pennapps XX - Toor              
             </li>
-            <li>
+            <li style={{fontSize:"25px"}}>
               <i className="fa-li fa fa-trophy text-warning"></i>
               Best UI/UX and Best use of Twilio - Citrus Hack 2019 - Joyride
             </li>
