@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
-
+import favicon from '../assets/images/favicon.ico'
 import '../assets/sass/resume.scss';
 
 class Layout extends Component {
@@ -29,6 +29,7 @@ class Layout extends Component {
               ]}
             >
               <html lang="en" />
+              <link rel="icon" href={favicon} />
             </Helmet>
             <div className={'main-body'}>{children}</div>
           </>
