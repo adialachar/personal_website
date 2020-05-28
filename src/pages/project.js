@@ -12,7 +12,7 @@ export class project extends Component {
         image: 'https://via.placeholder.com/350',
         website: 'https://via.placeholder.com',
       }
-      const { title, description, image, website, extended, videodemo, newsarticle ,language1,language2,tech1,tech2,tech3, tech4} = passedData
+      const { title, description, image, website, extended, videodemo, newsarticle ,language1,language2,tech1,tech2,tech3, tech4, vd, github} = passedData
 
     return (
        
@@ -36,7 +36,20 @@ export class project extends Component {
               <img class="img-fluid" src={image} alt="/"/>
               {/* <h3 class="my-3">Project Description</h3>
               <p>   {description} <br></br></p> <p> <div dangerouslySetInnerHTML={{__html: videodemo}} /> </p> <p><div dangerouslySetInnerHTML={{__html: newsarticle}} /></p> <p>{extended}</p> */}
-            <div className="dev-icons"> <div style={{float:"left", fontSize:"25px"}}><i className="fab fa-github"></i>   Source</div><div style={{float:"right",fontSize:"25px"}}> <i class="fab fa-youtube"></i>    Video Demo</div></div>
+            <div className="dev-icons"> <a href ={github}><div style={{float:"left", fontSize:"25px"}}><i className="fab fa-github"></i>   Source</div></a>
+            
+            {vd && 
+
+            <a href={videodemo}>
+            <div style={{float:"right",fontSize:"25px"}}> 
+            
+            
+   
+            <i class="fab fa-youtube"></i>    Video Demo</div>
+            </a>
+            }
+            </div>
+
             <br></br><br></br> <br/>
             <div>   {description} <br></br></div> <p>  </p> <p></p> <p>{extended}</p>
             </div>

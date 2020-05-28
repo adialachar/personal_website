@@ -28,7 +28,7 @@ class SiteIndex extends React.Component {
         <div className="w-100">
         
           <h1 className="mb-0 ">
-          👋🏼 Hi, I am 
+          👋🏼 Hi, I'm
             <span className="text-primary"> {config.firstName} {config.lastName}</span>
             
           </h1>

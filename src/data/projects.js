@@ -32,6 +32,7 @@ const data = [
     tech2: Express,
     tech3: Flask,
     tech4: GCP,
+    vd:true,
 
   },
   {
@@ -48,7 +49,8 @@ const data = [
     tech2: Flask,
     tech3: Jupyter,
     tech4: Spotify,
-    tech5: GCP
+    tech5: GCP,
+    vd:false,
     
   },
   {
@@ -66,6 +68,7 @@ const data = [
     tech3: MongoDB,
     tech4: IBMWatson,
     tech5: Jupyter,
+    vd:true,
   },
   {
     title: 'Toor',
@@ -80,6 +83,7 @@ const data = [
     tech2: Flask,
     tech3: SQLite,
     tech4: Firebase,
+    vd:false,
 
   },
   {
@@ -93,7 +97,8 @@ const data = [
     language2:Javascript,
     tech1: React,
     tech2: Flask,
-    tech3: GoogleMaps
+    tech3: GoogleMaps,
+    vd:false,
   },
 ]
 

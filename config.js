@@ -21,6 +21,11 @@ module.exports = {
       icon: 'fa-linkedin-in',
       name: 'Linkedin',
       url: 'https://linkedin.com/in/aacha002/',
+    },
+    {
+      icon: 'far fa-envelope',
+      name: 'Email',
+      url: 'mailto:aacha002@ucr.edu',
     }
 
     // {
