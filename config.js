@@ -23,6 +23,11 @@ module.exports = {
       url: 'https://linkedin.com/in/aacha002/',
     },
     {
+      icon: 'fa-medium',
+      name: "Medium",
+      url: "https://medium.com/@aacha002",
+    },
+    {
       icon: 'far fa-envelope',
       name: 'Email',
       url: 'mailto:aacha002@ucr.edu',

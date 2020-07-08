@@ -32,18 +32,20 @@ class SiteIndex extends React.Component {
             <span className="text-primary"> {config.firstName} {config.lastName}</span>
             
           </h1>
-          <h2 className="mt-2 mb-5 text-secondary"> I'm a Full Stack Web Developer!</h2>
+          <h2 className="mt-2 mb-5 text-secondary"> I just graduated from UC Riverside!</h2>
           {/* <div className="subheading mb-5">
             {config.address} · {config.phone} ·
             <a href={`mailto:${config.email}`}>{config.email}</a>
           </div> */}
            <p className="lead mb-5">
-                    I am an undergraduate CS student at the University of California Riverside graduating in June of 2020. 
-                    Outside of school, I enjoy making side projects and competing in hackathons with my friends.
+                    I recently graduated from UC Riverside with my B.S. in Computer Science in June. 
+                    My degree won't be in the mail for a few months, but if you ask me, the real degree was the friends we made along the way. 
+                    
                     <br></br>
                     <br></br>
-                    Most of my projects focus on web development (Flask/Django/React)
-                    but I'm always looking to learn new frameworks and languages.
+                    Outside of school, I develop web applications. 
+                    Most recently in March, I won 3rd place at LA Hacks 2020 with a web application my friends and I built using React, Express, and Flask. 
+                    
                  </p>
           <div className="social-icons">
             {config.socialLinks.map(social => {
@@ -88,12 +90,13 @@ class SiteIndex extends React.Component {
 
           <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
             <div className="resume-content">
-              <h3 className="mb-0">Software Engineering Intern</h3>
-              <div className="subheading mb-3">NASA JPL</div>
+              <h3 className="mb-0">NASA Jet Propulsion Laboratory</h3>
+              <div className="subheading mb-3">Software Engineering Intern</div>
               <p>
-              I developed features for JPL HR metrics application with Angular, Flask, and PostgreSQL used by entirety of JPL. 
-              I Created and modeled Angular components to fit Sketch mockup and make API calls to Flask endpoints
-              and built scripts in Python to automate population of Postgres database
+              During my time at JPL, I implemented several features for a JPL HR application that accelerated workflow for the entirety of JPL HR (100+ employees). The stack of the application used Angular 6, FlaskRESTPlus, PostgreSQL, which were all contianed in a Docker container with an NGINX image. 
+              <br></br>
+              <br/>
+              I collaborated with UI/UX designers on our team to convert Sketch mockups into Typescript and HTML/CSS code, and created several REST API endpoints inside the FlaskRESTPlus server. We used SQLAlchemy as our ORM. One of the key features I improved was the application's internal search function. I optimized the SQLAlchemy queries and implemented regular expressions in order to improve the user experience of the search function and more importantly, have it fit the client needs. 
               </p>
             </div>
             <div className="resume-date text-md-right">
@@ -103,13 +106,11 @@ class SiteIndex extends React.Component {
 
           <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
             <div className="resume-content">
-              <h3 className="mb-0">Web Dev Lead</h3>
-              <div className="subheading mb-3">Citrus Hack</div>
+              <h3 className="mb-0">Citrus Hack</h3>
+              <div className="subheading mb-3">Web Dev Lead</div>
               <p>
-                Citrus Hack is UCR's premier hackathon. I was the web dev co-lead creating both cutiehack.io and citrushack.com for the 2019-20 hackathon season. I created mockups in Figma, implemented those mockups in React, and installed a Django RF backend with GraphQL in the backend for Cutie Hack. This application was used by 500+ people.
-              <br></br>
-              <br></br>
-            For Citrus Hack, we primarily used React for the stack of the website. 
+                During the 2019-2020 MLH Hackathon season, I was one of the Web Dev Leads for both Cutie Hack and Citrus Hack. For Cutie Hack, we used a Django Rest Framework backend, a React frontend, a PostgreSQL database and we used GraphQL in order to limit the number of API endpoints created. In order to use GraphQL, we implemented graphene-django, a python GraphQL implementation, into the Django RF backend. The website was used by Cutie Hack in order to take the applicaitons of 500+ people. 
+            
               </p>
             </div>
             <div className="resume-date text-md-right">
@@ -117,8 +118,8 @@ class SiteIndex extends React.Component {
             </div>
           </div>
           <div >
-          <a key="https://drive.google.com/file/d/1dqatR1CI5Jeqb6pUvsowVBtmMpfnABr2/view?usp=sharing" 
-            href ="https://drive.google.com/file/d/1dqatR1CI5Jeqb6pUvsowVBtmMpfnABr2/view?usp=sharing"
+          <a key="https://drive.google.com/file/d/1_QKMy6OgK9h8gBRVEIaJibNKabpheV-Y/view?usp=sharing" 
+            href ="https://drive.google.com/file/d/1_QKMy6OgK9h8gBRVEIaJibNKabpheV-Y/view?usp=sharing"
             className="btn btn-primary "><i className ="fas fa-download pr-1"></i>
                Download Resume
             </a>
